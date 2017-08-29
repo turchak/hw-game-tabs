@@ -83,6 +83,42 @@ main {
 .description.hide {
   display: none; }
 
+.information {
+  display: flex;
+  flex-direction: column; }
+  .information__rating {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    list-style: none; }
+    .information__rating-star {
+      margin: 10px; }
+  .information__review-author {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fbfbfb; }
+  .information__review-text {
+    font-size: 16px;
+    color: #fedc3f; }
+
+.location {
+  flex-direction: column;
+  align-items: center; }
+  .location__link {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #aaadbb;
+    letter-spacing: 5px; }
+  .location__image {
+    margin-top: 30px;
+    width: 150px;
+    height: 150px; }
+
 .description {
   display: flex;
   justify-content: flex-start;
