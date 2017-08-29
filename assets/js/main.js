@@ -12,6 +12,7 @@ function hideContent(a) {
   }
 }
 document.querySelector('.menu').onclick = function(event) {
+  event.preventDefault();
   let target = event.target;
   if (target.className == 'menu-button') {
     for (var i = 0; i < button.length; i++) {
