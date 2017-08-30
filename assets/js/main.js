@@ -1,34 +1,11 @@
-let button = document.querySelectorAll('.menu-button');
 let description = document.querySelectorAll('.description');
+let tab = document.querySelectorAll('.menu__item');
 
-window.onload = function() {
-  hideContent(1);
-}
-
-function hideContent(a) {
-  for (var i = a; i < description.length; i++) {
-    description[i].classList.remove('show');
-    description[i].classList.add('hide');
+tab.forEach((element, index) => {
+  tab[index].onclick = function() {
+    description.forEach((j) => {
+      j.classList.remove('show');
+    })
+    description[index].className += ' show';
   }
-}
-document.querySelector('.menu').onclick = function(event) {
-  event.preventDefault();
-  let target = event.target;
-  if (target.className == 'menu-button') {
-    for (var i = 0; i < button.length; i++) {
-      if (target == button[i]) {
-        showContent(i);
-        break;
-      }
-    }
-  }
-}
-
-function showContent(b) {
-  if (description[b].classList.contains('hide')) {
-    hideContent(0);
-    description[b].classList.remove('hide');
-    description[b].classList.add('show');
-
-  }
-};
+})

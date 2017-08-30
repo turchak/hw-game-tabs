@@ -70,6 +70,7 @@ main {
     align-items: center;
     flex-direction: column; }
     .menu__item-title {
+      display: block;
       margin: 13px 0 0;
       font-family: Lato, sans-serif;
       font-size: 16px;
@@ -120,7 +121,7 @@ main {
     height: 150px; }
 
 .description {
-  display: flex;
+  display: none;
   justify-content: flex-start;
   padding: 60px 45px 0; }
   .description .product__rating {
