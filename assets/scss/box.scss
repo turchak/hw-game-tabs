@@ -9,8 +9,10 @@
   display: flex;
 }
 
-
-
+.menu__item.active {
+    opacity: 1;
+    border-bottom: 2px solid $c-light-white;
+  }
 
 .menu {
   display: flex;
@@ -30,10 +32,10 @@
     outline: none;
     opacity: 0.7;
 
-    &:focus {
-      opacity: 1;
-      border-bottom: 2px solid $c-light-white;
-    }
+    // &:focus {
+    //   opacity: 1;
+    //   border-bottom: 2px solid $c-light-white;
+    // }
   }
 
   &__item {
