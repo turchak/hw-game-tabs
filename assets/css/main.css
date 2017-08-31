@@ -189,7 +189,11 @@ main {
         width: 165px;
         height: 55px;
         background: #13e28d;
-        border: none; }
+        border: none;
+        cursor: pointer;
+        transition: background 0.4s ease; }
+        .description .info__footer-buy-button:hover {
+          background: #fedc3f; }
         .description .info__footer-buy-button-text {
           font-size: 16px;
           font-weight: 700;
